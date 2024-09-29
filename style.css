@@ -323,3 +323,15 @@ footer a:hover {
         font-size: 1.2rem;
     }
 }
+
+/* Scroll Animasyonları */
+.scroll-element {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
