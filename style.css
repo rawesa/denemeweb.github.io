@@ -1,0 +1,161 @@
+/* Font Yükleme */
+@font-face {
+    font-family: 'SF Pro Bold';
+    src: url('SFPRODISPLAYBOLD.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Genel Stil */
+body {
+    font-family: 'SF Pro Bold', sans-serif;
+    background-color: #0d1117;  /* Siyah ağırlıklı arka plan */
+    color: #c9d1d9; /* Hafif gri metin */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    color: #00ff00; /* Kapalı yeşil başlıklar */
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c9d1d9;
+}
+
+/* Navigasyon Bar */
+nav {
+    background-color: #161b22;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #00ff00;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Ana Başlık */
+header {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #1b1f24;
+    background-image: url('images/background.png');
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #c9d1d9;
+}
+
+/* Bölüm (Section) Stili */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Özellikler (Features) */
+.feature-box {
+    background-color: #21262d;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    background-color: #00ff00;
+}
+
+.feature-box h3 {
+    color: #00ff00;
+}
+
+/* İletişim Formu */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #161b22;
+    border-radius: 10px;
+}
+
+#contact-form label {
+    color: #00ff00;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d333b;
+    color: #fff;
+}
+
+#contact-form button {
+    background-color: #00ff00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #fff;
+    color: #00ff00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #161b22;
+    color: #c9d1d9;
+}
+
+footer a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
