@@ -1,73 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rawesa - Discord Bot</title>
+    <title>Rawesa Bot</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/opg6dcw.css"> <!-- Eğer online font eklemek istersen -->
 </head>
 <body>
 
     <!-- Navbar -->
     <nav>
-        <div class="logo">
-            <img src="images/logo.png" alt="Rawesa Logo" width="50">
-        </div>
-        <div>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <ul>
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#features">Özellikler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
     </nav>
 
     <!-- Header -->
-    <header>
-        <h1>Welcome to Rawesa</h1>
-        <p>Discover the power of automation with our Discord Bot!</p>
+    <header id="home">
+        <h1>Rawesa Discord Bot</h1>
+        <p>Kendi sunucunu en iyi şekilde yönet</p>
+        <button>Daha Fazla Bilgi Al</button>
     </header>
 
-    <!-- Features Section -->
+    <!-- Özellikler Bölümü -->
     <section id="features">
-        <h2>Features</h2>
-        <div class="feature-box">
-            <h3>Moderation Tools</h3>
-            <p>Manage your server with ease using Rawesa's advanced moderation tools.</p>
-        </div>
-        <div class="feature-box">
-            <h3>Custom Commands</h3>
-            <p>Create and manage custom commands tailored to your community's needs.</p>
-        </div>
-        <div class="feature-box">
-            <h3>24/7 Uptime</h3>
-            <p>Rawesa is always online, ensuring your server runs smoothly around the clock.</p>
-        </div>
+        <h2>Bot Özellikleri</h2>
+        <p>Rawesa, en gelişmiş Discord yönetim ve eğlence botudur.</p>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Rawesa</h2>
-        <p>Rawesa is a powerful, fully customizable Discord bot designed to help you manage your server with ease. Whether it's moderation, custom commands, or automation, Rawesa does it all with style.</p>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- İletişim Bölümü -->
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>İletişime Geçin</h2>
+        <p>İletişim için aşağıdaki formu doldurabilirsiniz.</p>
         <form id="contact-form">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-
-            <button type="submit">Send Message</button>
+            <input type="email" id="email" placeholder="E-posta adresiniz" required>
+            <textarea id="message" placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
         </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Rawesa - All Rights Reserved</p>
-        <p><a href="mailto:contact@rawesa.com">contact@rawesa.com</a></p>
+        <p>&copy; 2024 Rawesa Bot. Tüm Hakları Saklıdır. <a href="#">Discord Sunucumuza Katıl</a></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
