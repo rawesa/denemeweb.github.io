@@ -3,49 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rawesa Bot</title>
+    <title>Rawesa Discord Botu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://use.typekit.net/opg6dcw.css"> <!-- Eğer online font eklemek istersen -->
 </head>
 <body>
 
     <!-- Navbar -->
     <nav>
-        <ul>
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#features">Özellikler</a></li>
-            <li><a href="#contact">İletişim</a></li>
-        </ul>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Rawesa Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#pricing">Fiyatlandırma</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Header -->
     <header id="home">
-        <h1>Rawesa Discord Bot</h1>
-        <p>Kendi sunucunu en iyi şekilde yönet</p>
-        <button>Daha Fazla Bilgi Al</button>
+        <div class="header-content">
+            <h1>Rawesa Discord Botu</h1>
+            <p>Sunucunuz için en gelişmiş ve kullanıcı dostu Discord botu.</p>
+            <a href="#features" class="btn">Özellikleri Keşfet</a>
+            <a href="#pricing" class="btn-outline">Hemen Al</a>
+        </div>
     </header>
 
     <!-- Özellikler Bölümü -->
     <section id="features">
-        <h2>Bot Özellikleri</h2>
-        <p>Rawesa, en gelişmiş Discord yönetim ve eğlence botudur.</p>
+        <div class="container">
+            <h2>Özellikler</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="images/feature1.jpg" alt="Özellik 1">
+                    <h3>Otomatik Moderasyon</h3>
+                    <p>Sunucunuzu güvende tutmak için gelişmiş moderasyon araçları.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/feature2.jpg" alt="Özellik 2">
+                    <h3>Kişiselleştirilebilir Komutlar</h3>
+                    <p>Kendi komutlarınızı oluşturun ve sunucunuza özel hale getirin.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/feature3.jpg" alt="Özellik 3">
+                    <h3>24/7 Aktiflik</h3>
+                    <p>Rawesa her zaman hizmetinizde, sunucunuz daima güvende.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="images/feature4.jpg" alt="Özellik 4">
+                    <h3>Müzik Çalma Özelliği</h3>
+                    <p>En sevdiğiniz müzikleri doğrudan Discord'da dinleyin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda Bölümü -->
+    <section id="about">
+        <div class="container">
+            <h2>Hakkımızda</h2>
+            <p>Rawesa, Discord sunucularınızı daha etkili yönetmenize yardımcı olmak için tasarlanmış güçlü ve kullanıcı dostu bir bottur. Geliştirici ekibimiz, en son teknolojileri kullanarak sürekli olarak yeni özellikler eklemekte ve botu geliştirmektedir.</p>
+        </div>
+    </section>
+
+    <!-- Fiyatlandırma Bölümü -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Fiyatlandırma</h2>
+            <div class="pricing-cards">
+                <div class="card">
+                    <h3>Ücretsiz</h3>
+                    <p>Temel özelliklere erişim.</p>
+                    <p class="price">0₺ / Ay</p>
+                    <ul>
+                        <li>Otomatik Moderasyon</li>
+                        <li>Kişiselleştirilebilir Komutlar</li>
+                        <li>24/7 Aktiflik</li>
+                    </ul>
+                    <a href="#" class="btn">Başla</a>
+                </div>
+                <div class="card premium">
+                    <h3>Premium</h3>
+                    <p>Tüm özelliklere sınırsız erişim.</p>
+                    <p class="price">50₺ / Ay</p>
+                    <ul>
+                        <li>Tüm Ücretsiz Özellikler</li>
+                        <li>Müzik Çalma Özelliği</li>
+                        <li>Özel Destek</li>
+                        <li>Gelişmiş Analizler</li>
+                    </ul>
+                    <a href="#" class="btn">Satın Al</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- İletişim Bölümü -->
     <section id="contact">
-        <h2>İletişime Geçin</h2>
-        <p>İletişim için aşağıdaki formu doldurabilirsiniz.</p>
-        <form id="contact-form">
-            <input type="email" id="email" placeholder="E-posta adresiniz" required>
-            <textarea id="message" placeholder="Mesajınız" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
+        <div class="container">
+            <h2>İletişim</h2>
+            <p>Herhangi bir sorunuz veya öneriniz için bize ulaşın.</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Adınız" required>
+                <input type="email" id="email" placeholder="E-posta Adresiniz" required>
+                <textarea id="message" placeholder="Mesajınız" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Rawesa Bot. Tüm Hakları Saklıdır. <a href="#">Discord Sunucumuza Katıl</a></p>
+        <div class="container">
+            <p>&copy; 2024 Rawesa Bot. Tüm Hakları Saklıdır.</p>
+            <p><a href="mailto:onlyreasw@gmail.com">onlyreasw@gmail.com</a></p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
